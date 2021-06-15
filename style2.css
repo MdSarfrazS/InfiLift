@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ------ Body ------ */
+
+body
+{
+    background-color: #012c64;
+}
+
+
+
+/* ------ First section ------ */
+
+.container
+{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.container h2
+{
+    padding: 60px 0;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col
+{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.feature-img
+{
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+.small-img-row
+{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+}
+
+.small-img-row
+{
+    position: relative;
+}
+
+.small-img img
+{
+    width: 150px;
+}
+
+.small-img-row p
+{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.play-btn
+{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;                      /* This will turn pointer to finger cursor on hover */
+}
+
+.small-img .play-btn
+{
+    width: 35px;
+    left: 17%;
+    top: 50%;
+}
+
+.video-player
+{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+video:focus
+{
+    outline: none;              /* This will remove the border from the video player while video is playing. */
+}
+
+.close-btn
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}

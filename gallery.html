@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>InfiLift Gallery</title>
+
+        <!---- External CSS Stylesheet ---->
+        <link rel="stylesheet" href="style2.css">
+
+    </head>
+    
+    <body>
+
+        <!------ Section 1 ----->
+
+        <div class="container">
+            <h2>WEIGHT TRAINING</h2>
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="feature-img">
+                        <img src="gal/weight_training.jpg" width="100%">
+                        <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/Weight_T.mp4')">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/lat_pulldown.jpg">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/Lat_Pulldown.mp4')">
+                        </div>
+                        <p>Don't be afraid to Fail. Be afraid to not Try.</p>
+                    </div>
+
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/deadlift.jpg">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/Deadlift.mp4')">
+                        </div>
+                        <p>Every step is a Progress.</p>
+                    </div>
+
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/bench press.jpg">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/BenchPress.mp4')">
+                        </div>
+                        <p>Pain is Temporary. Pride is Forever.</p>
+                    </div>
+                </div>    
+
+            </div>
+
+        </div>
+
+
+        <!----- Section 2 ----->
+
+        <div class="container">
+            <h2>CARDIO</h2>
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="feature-img">
+                        <img src="gal/cardio.png" width="100%">
+                        <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/cardio.mp4')">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/trademill.jpg">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/trademill.mp4')">
+                        </div>
+                        <p>TradeMill</p>
+                    </div>
+
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/crunches.jpg">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/crunches.mp4')">
+                        </div>
+                        <p>Crunches</p>
+                    </div>
+
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/plank.png">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/plank.mp4')">
+                        </div>
+                        <p>Plank</p>
+                    </div>
+                </div>    
+
+            </div>
+
+        </div>
+
+
+        <!------ Crossfit ---->
+
+        <div class="container">
+            <h2>CROSSFIT</h2>
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="feature-img">
+                        <img src="gal/cardio.png" width="100%">
+                        <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/cardio.mp4')">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/trademill.jpg">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/trademill.mp4')">
+                        </div>
+                        <p>TradeMill</p>
+                    </div>
+
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/crunches.jpg">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/crunches.mp4')">
+                        </div>
+                        <p>Crunches</p>
+                    </div>
+
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="gal/plank.png">
+                            <img src="gal/play.png" class="play-btn" onclick="playVideo('gal/videos/plank.mp4')">
+                        </div>
+                        <p>Plank</p>
+                    </div>
+                </div>    
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!---- Video Player -->
+
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="gal/videos/BenchPress.mp4" type="video/mp4">
+            </video>    
+            <img src="gal/close.png" class="close-btn" onclick="stopVideo()">
+        </div>
+
+
+        <!------ JavaScript for closing the video player --->
+
+        <script>
+
+            var videoPlayer = document.getElementById("videoPlayer");
+            var myVideo = document.getElementById("myVideo");
+
+            function stopVideo()
+            {
+                videoPlayer.style.display = "none";
+            }
+
+            function playVideo(file)
+            {
+                myVideo.src = file;
+                videoPlayer.style.display = "block";
+            }
+
+
+        </script>  
+
+
+
+
+
+    </body>    
+
+</html>
